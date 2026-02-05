@@ -1,0 +1,104 @@
+  /* Add some CSS for the 'affix' class to see the effect */
+  .navbar.affix {
+      background-color: #75b798d1 !important;
+      /* Darker background when affixed */
+      color: #000 !important;
+      transition: background-color 0.3s ease-in-out;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      /* Subtle shadow */
+  }
+
+  .navbar.affix .nav-link,
+  .navbar.affix .navbar-brand {
+      color: #fff !important;
+      /* White text when affixed */
+  }
+
+  /* .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #fff !important;
+} */
+
+  /* Placeholder content for scrolling */
+  .content-placeholder {
+      height: 1200px;
+      /* Make it tall enough to scroll */
+      background-color: #f8f9fa;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 50px;
+      text-align: center;
+      color: #333;
+  }
+
+  .content-placeholder h2 {
+      margin-bottom: 20px;
+      font-size: 2.5rem;
+      color: #007bff;
+  }
+
+  .content-placeholder p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      line-height: 1.6;
+  }
+
+  .bg-light {
+      opacity: 1;
+      background-color: #000 !important;
+      /* background-color: #75b798d1 !important; */
+      /* background-color: #527d76!important; */
+  }
+
+  .nav-link {
+      color: #fff !important;
+  }
+
+
+  /* Ensure rounded corners for all elements as per instructions */
+  /* .navbar, .dropdown-menu, .nav-item, .nav-link, .navbar-toggler, .navbar-brand img {
+    border-radius: 0.5rem;
+} */
+  .navbar-toggler {
+      border: none;
+      /* Remove default border */
+  }
+
+  .navbar-toggler:focus {
+      box-shadow: none;
+      /* Remove focus outline */
+  }
+
+  .dropdown-menu[data-bs-popper] {
+      left: -60px !important;
+  }
+
+  .dropdown-menu {
+      font-size: 0.8rem !important;
+  }
+
+  .dropdown-menu>li>span {
+      display: block;
+      /* Essencial para o text-align funcionar */
+      text-align: center;
+  }
+
+  .dropdown-menu>hr {
+      margin: 5px 0;
+  }
+
+  .dropdown-item:focus,
+  .dropdown-item:hover {
+      background-color: #38a16f63 !important;
+  }
+
+  .nav-link:focus,
+  .nav-link:hover {
+      background-color: #38a16f63 !important;
+      border-radius: 20px;
+  }
+
+  .navbar-toggler-icon {
+      background-color: #fff;
+  }

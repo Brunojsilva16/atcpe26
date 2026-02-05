@@ -1,0 +1,130 @@
+/* Importa a fonte Inter para uma tipografia moderna e legível. */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* text-align: center; */
+    /* Alinha no topo para formulários longos */
+    min-height: 100vh;
+    padding: 2rem 1rem;
+}
+
+/* Container principal do formulário com sombra e bordas arredondadas. */
+.form-container {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    margin: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 32rem;
+    border-top: 5px solid #527d76;
+    /* Cor de destaque da sua marca */
+}
+
+
+@media (max-width: 512px) {
+    .form-container {
+        max-width: 25rem!important;
+    }
+    body{
+        text-align: left;
+    }
+}
+
+
+.form-container h2 {
+    text-align: center;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.75rem;
+}
+
+.form-container p {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Estilo para a pré-visualização da foto de perfil. */
+.photo-preview-wrapper {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #e9ecef;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.photo-preview-wrapper:hover {
+    transform: scale(1.05);
+}
+
+#photo-preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Garante que a imagem preencha o círculo sem distorcer. */
+}
+
+/* Estilo para o botão de upload personalizado. */
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    font-weight: 500;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+/* Botão principal com a cor da sua marca. */
+.btn-primary {
+    background-color: #527d76;
+    border-color: #527d76;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-warning {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.btn-primary:hover {
+    background-color: #0e3b33;
+    border-color: #0e3b33;
+}
+
+/* Ajustes nos campos de formulário. */
+.form-control {
+    border-radius: 8px;
+    padding: 12px;
+    color: #527d76;
+}
+
+.form-control:focus {
+    border-color: #527d76;
+    box-shadow: 0 0 0 0.25rem rgba(82, 125, 118, 0.25);
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+.alert-heading {
+    margin-bottom: 2.5rem !important;
+}
+
+/* 
+:disabled {
+    cursor: not-allowed!important;
+    background-color: #dee2e6!important;
+} */

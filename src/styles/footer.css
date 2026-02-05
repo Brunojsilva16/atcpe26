@@ -1,0 +1,191 @@
+ /* Estilos do Rodapé */
+
+ .site-footer {
+     background-color: #1a202c;
+     color: #d1d5db;
+     padding: 2rem 1rem;
+     display: block;
+     width: 100%;
+     bottom: 0;
+ }
+
+ .footer-container {
+     max-width: 80rem;
+     margin-left: auto;
+     margin-right: auto;
+     display: grid;
+     grid-template-columns: repeat(1, minmax(0, 1fr));
+     gap: 3rem;
+     text-align: left;
+ }
+
+ .footer-column {
+     display: flex;
+     flex-direction: column;
+     gap: 1rem;
+ }
+
+ .footer-logo img {
+     border-radius: 0.25rem;
+     width: 33%;
+ }
+
+ .footer-description {
+     font-size: 0.875rem;
+     line-height: 1.625;
+     text-align: justify;
+     hyphens: auto;
+     color: #9ca3af;
+ }
+
+ .social-links {
+     display: flex;
+     gap: 1rem;
+ }
+
+ .social-links a {
+     color: #9ca3af;
+     transition: color 0.3s;
+ }
+
+ .social-links a:hover {
+     color: white;
+ }
+
+ .social-links svg {
+     height: 1.5rem;
+     width: 1.5rem;
+ }
+
+ .footer-heading {
+     font-size: 1rem;
+     font-weight: 600;
+     letter-spacing: 0.05em;
+     color: white;
+     text-transform: uppercase;
+ }
+
+ .footer-links {
+     list-style: none;
+     padding: 0;
+     margin: 1rem 0 0 0;
+     display: flex;
+     flex-direction: column;
+     gap: 0.5rem;
+ }
+
+ .footer-links a {
+     color: #9ca3af;
+     text-decoration: none;
+     transition: color 0.3s;
+ }
+
+ .footer-links a:hover {
+     color: white;
+ }
+
+ /* Estilos da nova seção "Siga-nos" */
+ .follow-us-section .footer-description {
+     margin-top: 1rem;
+ }
+
+ .instagram-follow {
+     margin-top: 1.5rem;
+ }
+
+ .instagram-icon-link {
+     color: white;
+     font-size: 2.5rem;
+     /* Tamanho do ícone */
+     transition: color 0.3s, transform 0.3s;
+     display: inline-block;
+ }
+
+ .instagram-icon-link:hover {
+     color: white;
+     transform: scale(1.1);
+     /* Efeito de zoom ao passar o mouse */
+ }
+
+ .footer-copyright-bar {
+     margin-top: 1.2rem;
+     padding-top: 1.2rem;
+     border-top: 1px solid #374151;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     font-size: 0.875rem;
+     color: #9ca3af;
+ }
+
+ .copyright-links {
+     display: flex;
+     gap: 1rem;
+     margin-top: 1rem;
+ }
+
+ .copyright-links a {
+     color: #9ca3af;
+     text-decoration: none;
+     transition: color 0.3s;
+ }
+
+ .copyright-links a:hover {
+     color: white;
+ }
+
+ /* Utilitários */
+ .sr-only {
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     padding: 0;
+     margin: -1px;
+     overflow: hidden;
+     clip: rect(0, 0, 0, 0);
+     white-space: nowrap;
+     border-width: 0;
+ }
+
+ footer hr {
+    margin: 0.2rem 0!important;
+ }
+ /* ====================================================================== */
+ /* ESTILOS RESPONSIVOS                                                  */
+ /* ====================================================================== */
+
+ /* Telas pequenas (sm) - ex: celulares */
+ @media (min-width: 640px) {
+     .site-footer {
+         padding-left: 1.5rem;
+         padding-right: 1.5rem;
+     }
+
+     .footer-copyright-bar {
+         flex-direction: row;
+     }
+
+     .copyright-links {
+         margin-top: 0;
+     }
+ }
+
+ /* Telas médias (md) - ex: tablets */
+ @media (min-width: 768px) {
+     .footer-container {
+         grid-template-columns: repeat(2, minmax(0, 1fr));
+     }
+ }
+
+ /* Telas grandes (lg) - ex: desktops */
+ @media (min-width: 1024px) {
+     .site-footer {
+         padding-left: 2rem;
+         padding-right: 2rem;
+     }
+
+     .footer-container {
+         grid-template-columns: repeat(4, minmax(0, 1fr));
+     }
+ }

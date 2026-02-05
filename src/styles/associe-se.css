@@ -1,0 +1,133 @@
+/* Importa a fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* --- Configurações Globais e do Corpo da Página --- */
+body {
+    background-color: #f4f6f8;
+    font-family: 'Poppins', sans-serif;
+    /* display: flex; */
+    /* flex-direction: column;
+justify-content: center;
+align-items: center;
+min-height: 100vh; */
+    margin: 0;
+    /* padding: 2rem; */
+}
+
+/* --- Contêiner Principal dos Cards --- */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    /* min-height: 100vh; */
+    padding: 2rem 0 3rem 0;
+}
+
+/* --- Estilo para o link que envolve o card --- */
+.card-link {
+    text-decoration: none;
+    /* Remove o sublinhado do link */
+    color: inherit;
+    /* Faz o texto herdar a cor do elemento pai, em vez de ficar azul */
+}
+
+/* --- Estilo Base para Todos os Cards --- */
+.card {
+    width: 240px;
+    height: 250px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* --- Área de Destaque Superior --- */
+.card::before {
+    content: '';
+    display: block;
+    height: 8px;
+    /* Altura da barra colorida superior */
+    width: 100%;
+}
+
+.card-light-green::before {
+    background-color: #a7f5a9;
+}
+
+/* --- Conteúdo Dentro do Card --- */
+.card-content {
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+/* --- Estilo do Título --- */
+.title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.4;
+    min-height: 45px;
+    /* Garante alinhamento mesmo com uma linha */
+    margin: 0 0 1.5rem 0;
+}
+
+/* --- Estilo do Preço --- */
+.price {
+    font-size: 2.2rem;
+    /* Tamanho maior para destaque */
+    font-weight: 700;
+    color: #2c3e50;
+    position: relative;
+}
+
+/* Adiciona o "R$" antes do preço */
+.price::before {
+    content: 'R$';
+    font-size: 1rem;
+    font-weight: 400;
+    color: #7f8c8d;
+    position: relative;
+    top: -5px;
+    margin-right: 4px;
+}
+
+/* --- Card Destacado (último card) --- */
+.highlighted {
+    box-shadow: 0 6px 20px rgba(100, 181, 246, 0.4);
+    border: 2px solid #64b5f6;
+}
+
+.highlighted::before {
+    background-color: #64b5f6;
+    /* Cor da barra superior do destacado */
+}
+
+span.mais {
+    font-size: 12px;
+ 
+    background-color: #527d76;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 5px;
+}
